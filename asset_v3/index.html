@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여행지 추천</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!--메뉴-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">여행지 추천</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">메뉴1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">메뉴2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">메뉴3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- 이미지-->
+    <div class="text-center" id="img_sector">
+        <img src="src/tour.jpeg" class="rounded"  alt="soul" width="500" height="150" object-fit: cover>
+    </div>
+<!--예약 옵션-->
+<div id="main_body">
+    <div class="container text-center" class="content">
+        <div class="row">
+            <div class="col">
+                <div class="reservation-container">
+                    <h2>예약하기</h2>
+                
+                    <div class="reservation-form">
+                        <label for="date">날짜:</label>
+                        <input type="date" id="date" name="date">
+                
+                        <label for="location">장소:</label>
+                        <select id="location" name="location">
+                            <option value="국내여행지">여행지를 선택해 주세요</option>
+                            <option value="서울">서울</option>
+                            <option value="부산">부산</option>
+                            <option value="제주도">제주도</option>
+                        </select>
+                
+                        <label for="people">인원수:</label>
+                        <input type="number" id="people" name="people" min="1" value="1">
+                
+                        <button type="submit" id="reqbtn">예약하기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="chat-container" style="width: 100%; height: 95%;">
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- Sample messages -->
+                        <div class="message bot">안녕하세요! 어떻게 도와드릴까요?</div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="userInput" placeholder="메시지를 입력하세요...">
+                    </div>
+                </div>
+                <p>답변 중이니 잠시만 기다려 주세요!</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--footer-->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">옵션1</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">옵션2</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">옵션3</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">옵션4</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">(주) 슈퍼 아이콘</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
